@@ -30,7 +30,7 @@
 
 // Pin definitions
 #define         Relay_1_Pin                 7
-#define         Relay_2_Pin                 8
+//#define         Relay_2_Pin                 8
 #define         Pilot_PWM_Pin               10
 #define         GFCI_Test_Pin               11
 #define         Indicator_LED               13
@@ -294,14 +294,14 @@ void Fault_Handler(byte Fault_type)
 
 void Close_Relays()
 {
-  pinMode(Relay_1_Pin, OUTPUT); pinMode(Relay_2_Pin, OUTPUT);
-  digitalWrite(Relay_1_Pin, HIGH); digitalWrite(Relay_2_Pin, HIGH);    
+  pinMode(Relay_1_Pin, OUTPUT); //pinMode(Relay_2_Pin, OUTPUT);
+  digitalWrite(Relay_1_Pin, HIGH); //digitalWrite(Relay_2_Pin, HIGH);    
 }
 
 void Open_Relays()
 {
-  pinMode(Relay_1_Pin, OUTPUT); pinMode(Relay_2_Pin, OUTPUT);
-  digitalWrite(Relay_1_Pin, LOW); digitalWrite(Relay_2_Pin, LOW);    
+  pinMode(Relay_1_Pin, OUTPUT); //pinMode(Relay_2_Pin, OUTPUT);
+  digitalWrite(Relay_1_Pin, LOW); //digitalWrite(Relay_2_Pin, LOW);    
 }
 
 //  ######################################################################################################
